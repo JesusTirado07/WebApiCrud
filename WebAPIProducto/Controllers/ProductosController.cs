@@ -13,7 +13,7 @@ namespace MyApp.Namespace
     [Route("api/[controller]")]
     public class ProductosController : ControllerBase
     {
-        private readonly ILogger<ProductosController> _logger; // Corrige el tipo ILogger a ProductosController
+        private readonly ILogger<ProductosController> _logger; 
         private readonly DataContext _context;
 
         public ProductosController(ILogger<ProductosController> logger, DataContext context)
